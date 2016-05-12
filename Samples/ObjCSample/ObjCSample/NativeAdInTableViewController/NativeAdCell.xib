@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NativeAdCell" rowHeight="70" id="Hs9-AK-ZhO" customClass="NativeAdCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Hs9-AK-ZhO" id="8pd-yL-VSh">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Ciw-5O-6LD">
+                        <rect key="frame" x="8" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="2Zi-61-WI4"/>
+                            <constraint firstAttribute="width" constant="50" id="Mrg-4v-NpD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Ad Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="Fqv-fq-ZCJ">
+                        <rect key="frame" x="66" y="10" width="158" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="TAI-T5-Qpy">
+                        <rect key="frame" x="66" y="33" width="158" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Bc-Pi-fpu">
+                        <rect key="frame" x="232" y="8" width="80" height="26"/>
+                        <color key="backgroundColor" red="0.22745099660000001" green="0.78823536630000002" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="XgV-rI-dP3"/>
+                            <constraint firstAttribute="width" constant="80" id="dX1-3k-ejJ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="Call to action"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sponsored" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hD-Bv-w1H">
+                        <rect key="frame" x="230" y="42" width="82" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="82" id="3LY-uw-1F7"/>
+                            <constraint firstAttribute="height" constant="18" id="g1p-Ja-3r2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                    </label>
+                    <view tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="duZ-J3-iZQ">
+                        <rect key="frame" x="257" y="37" width="55" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="3MB-ah-30s"/>
+                            <constraint firstAttribute="width" constant="55" id="dY9-Zp-KRa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.050000000000000003" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="0Bc-Pi-fpu" firstAttribute="leading" secondItem="Fqv-fq-ZCJ" secondAttribute="trailing" constant="8" symbolic="YES" id="G9H-Tf-D35"/>
+                    <constraint firstItem="duZ-J3-iZQ" firstAttribute="top" secondItem="0Bc-Pi-fpu" secondAttribute="bottom" constant="3" id="GW2-A8-sm2"/>
+                    <constraint firstItem="Fqv-fq-ZCJ" firstAttribute="leading" secondItem="Ciw-5O-6LD" secondAttribute="trailing" constant="8" symbolic="YES" id="JeE-ME-Uih"/>
+                    <constraint firstItem="Ciw-5O-6LD" firstAttribute="leading" secondItem="8pd-yL-VSh" secondAttribute="leadingMargin" id="KRS-Kq-TaA"/>
+                    <constraint firstItem="TAI-T5-Qpy" firstAttribute="leading" secondItem="Fqv-fq-ZCJ" secondAttribute="leading" id="MgM-lx-jGM"/>
+                    <constraint firstItem="0Bc-Pi-fpu" firstAttribute="top" secondItem="Ciw-5O-6LD" secondAttribute="top" id="O34-V3-4cT"/>
+                    <constraint firstItem="Fqv-fq-ZCJ" firstAttribute="centerY" secondItem="0Bc-Pi-fpu" secondAttribute="centerY" id="S4b-YH-WE1"/>
+                    <constraint firstItem="Ciw-5O-6LD" firstAttribute="top" secondItem="8pd-yL-VSh" secondAttribute="topMargin" id="U2c-1X-62v"/>
+                    <constraint firstItem="0Bc-Pi-fpu" firstAttribute="leading" secondItem="TAI-T5-Qpy" secondAttribute="trailing" constant="8" symbolic="YES" id="dL0-H0-cDY"/>
+                    <constraint firstItem="0hD-Bv-w1H" firstAttribute="trailing" secondItem="8pd-yL-VSh" secondAttribute="trailingMargin" id="fHw-rv-U47"/>
+                    <constraint firstItem="TAI-T5-Qpy" firstAttribute="top" secondItem="Fqv-fq-ZCJ" secondAttribute="bottom" constant="2" id="iBg-BD-hYg"/>
+                    <constraint firstItem="TAI-T5-Qpy" firstAttribute="bottom" secondItem="Ciw-5O-6LD" secondAttribute="bottom" id="mJF-JC-YEU"/>
+                    <constraint firstItem="0Bc-Pi-fpu" firstAttribute="trailing" secondItem="0hD-Bv-w1H" secondAttribute="trailing" id="mlf-ZR-F7p"/>
+                    <constraint firstItem="duZ-J3-iZQ" firstAttribute="trailing" secondItem="0Bc-Pi-fpu" secondAttribute="trailing" id="vXP-8o-cqc"/>
+                    <constraint firstItem="0hD-Bv-w1H" firstAttribute="top" secondItem="0Bc-Pi-fpu" secondAttribute="bottom" constant="8" symbolic="YES" id="vnb-6H-uTA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="adCallToActionButton" destination="0Bc-Pi-fpu" id="Grw-8u-qSy"/>
+                <outlet property="adDescriptionLabel" destination="TAI-T5-Qpy" id="6L8-Zs-pOI"/>
+                <outlet property="adIconImageView" destination="Ciw-5O-6LD" id="LEI-IB-7at"/>
+                <outlet property="adTitleLabel" destination="Fqv-fq-ZCJ" id="dAH-My-kg1"/>
+            </connections>
+            <point key="canvasLocation" x="246" y="-404"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="NewsIcon" width="64" height="64"/>
+    </resources>
+</document>

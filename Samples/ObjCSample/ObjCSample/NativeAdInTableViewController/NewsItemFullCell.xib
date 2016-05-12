@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8173.3" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8142"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="220" id="xn4-a0-jkO" userLabel="NewsItemFullCell" customClass="NewsItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xn4-a0-jkO" id="c1n-k3-X1M">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="219"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Vu3-Gb-VGm">
+                        <rect key="frame" x="8" y="59" width="304" height="36"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="kom-nK-a5K"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your News Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="ED5-R6-kCh">
+                        <rect key="frame" x="8" y="8" width="304" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="xsM-af-sDO"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PublishedDate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2m-9q-6Sj">
+                        <rect key="frame" x="8" y="36" width="176" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="Fpt-ZO-g17"/>
+                            <constraint firstAttribute="width" constant="176" id="iTO-NR-1Q9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewsIcon" translatesAutoresizingMaskIntoConstraints="NO" id="sKV-Kf-e7k">
+                        <rect key="frame" x="8" y="103" width="304" height="108"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Vu3-Gb-VGm" firstAttribute="trailing" secondItem="c1n-k3-X1M" secondAttribute="trailingMargin" id="5cI-hW-K6R"/>
+                    <constraint firstItem="Vu3-Gb-VGm" firstAttribute="leading" secondItem="P2m-9q-6Sj" secondAttribute="leading" id="Dyl-wg-sWW"/>
+                    <constraint firstItem="sKV-Kf-e7k" firstAttribute="bottom" secondItem="c1n-k3-X1M" secondAttribute="bottomMargin" id="HR2-8q-HdD"/>
+                    <constraint firstItem="Vu3-Gb-VGm" firstAttribute="trailing" secondItem="ED5-R6-kCh" secondAttribute="trailing" id="SE5-RQ-BFh"/>
+                    <constraint firstItem="ED5-R6-kCh" firstAttribute="top" secondItem="c1n-k3-X1M" secondAttribute="topMargin" id="TXd-2X-slN"/>
+                    <constraint firstItem="Vu3-Gb-VGm" firstAttribute="top" secondItem="c1n-k3-X1M" secondAttribute="top" constant="59" id="TrW-ae-UfJ"/>
+                    <constraint firstItem="Vu3-Gb-VGm" firstAttribute="top" secondItem="P2m-9q-6Sj" secondAttribute="bottom" constant="8" symbolic="YES" id="YPq-IO-SBw"/>
+                    <constraint firstItem="P2m-9q-6Sj" firstAttribute="top" secondItem="ED5-R6-kCh" secondAttribute="bottom" constant="8" symbolic="YES" id="a20-qG-HLm"/>
+                    <constraint firstItem="sKV-Kf-e7k" firstAttribute="trailing" secondItem="Vu3-Gb-VGm" secondAttribute="trailing" id="fVI-Gk-led"/>
+                    <constraint firstItem="P2m-9q-6Sj" firstAttribute="leading" secondItem="ED5-R6-kCh" secondAttribute="leading" id="nQB-Kd-Fy4"/>
+                    <constraint firstItem="sKV-Kf-e7k" firstAttribute="top" secondItem="Vu3-Gb-VGm" secondAttribute="bottom" constant="8" symbolic="YES" id="rrW-8t-nce"/>
+                    <constraint firstItem="sKV-Kf-e7k" firstAttribute="leading" secondItem="c1n-k3-X1M" secondAttribute="leadingMargin" id="xMN-8d-dm6"/>
+                    <constraint firstItem="sKV-Kf-e7k" firstAttribute="leading" secondItem="Vu3-Gb-VGm" secondAttribute="leading" id="zLF-07-YOB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="newsItemDescriptionLabel" destination="Vu3-Gb-VGm" id="msw-kj-Xze"/>
+                <outlet property="newsItemIconImageView" destination="sKV-Kf-e7k" id="bLD-Lp-SRy"/>
+                <outlet property="newsItemTitleLabel" destination="ED5-R6-kCh" id="8MW-UC-Sl0"/>
+                <outlet property="publishedDateLabel" destination="P2m-9q-6Sj" id="aLv-1t-gT5"/>
+            </connections>
+            <point key="canvasLocation" x="410" y="215"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="NewsIcon" width="64" height="64"/>
+    </resources>
+</document>

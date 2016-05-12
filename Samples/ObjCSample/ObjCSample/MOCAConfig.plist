@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>APP_KEY</key>
+	<string>LA-sxnixS1KuiaIshYmBIg</string>
+	<key>APP_SECRET</key>
+	<string>azej1ftBsgzAsbnlDFR3mkveGSA=</string>
+	<key>GEOLOCATION_SERVICE_ENABLED</key>
+	<string>YES</string>
+	<key>PROXIMITY_SERVICE_ENABLED</key>
+	<true/>
+	<key>AUTOMATIC_PUSH_SETUP_ENABLED</key>
+	<false/>
+	<key>CACHE_DISK_SIZE_IN_MB</key>
+	<integer>100</integer>
+	<key>LOG_LEVEL</key>
+	<string>info</string>
+</dict>
+</plist>
