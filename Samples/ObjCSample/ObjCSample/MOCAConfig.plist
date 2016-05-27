@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>APP_KEY</key>
-	<string>LA-sxnixS1KuiaIshYmBIg</string>
+	<string>nWqV6v6XR7GArCVK9o54DQ</string>
 	<key>APP_SECRET</key>
-	<string>azej1ftBsgzAsbnlDFR3mkveGSA=</string>
+	<string>PjsRSfpMyGUSO+z5hDCwCgfC/Bg=</string>
 	<key>GEOLOCATION_SERVICE_ENABLED</key>
 	<string>YES</string>
 	<key>PROXIMITY_SERVICE_ENABLED</key>
@@ -15,6 +15,6 @@
 	<key>CACHE_DISK_SIZE_IN_MB</key>
 	<integer>100</integer>
 	<key>LOG_LEVEL</key>
-	<string>info</string>
+	<string>warning</string>
 </dict>
 </plist>

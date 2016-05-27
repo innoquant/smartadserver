@@ -27,6 +27,7 @@
 #import "SASAdView.h"
 
 #define UPDATE_TARGET_EVERY_SECONDS 60.0
+#define MAX_LOCATION_AGE_SECONDS -300.0
 
 @interface MOCAAds()
 {
@@ -55,32 +56,36 @@ static MOCAAds * _shared = nil;
     return _shared;
 }
 
-+(CLLocation*)getLocation
++(void)updateLocation
 {
-    MOCAAds * ads = [MOCAAds shared];
-    return ads ? ads->_lastLocation : nil;
+    CLLocation* loc = [MOCA lastKnownLocation];
+    
+    if(loc && loc.timestamp){
+        NSTimeInterval interval = [loc.timestamp timeIntervalSinceNow];
+        if(interval < MAX_LOCATION_AGE_SECONDS){
+            //too ,old
+            return;
+        }
+        [SASAdView setLocation:loc];
+    }
 }
 
 +(NSString*)getTarget
 {
     if (![MOCA initialized]) return nil;
-    
-    // update every 60 seconds
-    MOCAInstance * instance = [MOCA currentInstance];
-    NSArray * segmentNames = nil; // instance ? [instance matchingSegments] : nil;
-    if (segmentNames)
-    {
-        // encode as list
-        // { segment1=1;segment2=1, ...., segmentN=1 } list.
-        // TODO
-        return @"";
+    NSArray* stringSegments = [[MOCA currentInstance] allSegments];
+    if (!stringSegments) return nil;
+    NSMutableString * target = [[NSMutableString alloc] init];
+    NSString * sep = @"";
+    for(NSString * seg in stringSegments){
+        //segmentA=1;segmentB=1
+        [target appendString:[NSString stringWithFormat: @"%@%@=1",sep, seg]];
+        sep = @";";
     }
-    return nil;
+    [self updateLocation];
+    NSLog(@"✅ MOCA Target: %@", target);
+    return target;
 }
 
--(void)didUpdateLocation:(CLLocation*)location
-{
-    [SASAdView setLocation:location];
-}
 
 @end

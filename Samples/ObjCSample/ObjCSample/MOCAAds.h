@@ -24,12 +24,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreLocation/CoreLocation.h>
 #import "MOCA.h"
 
-@interface MOCAAds : NSObject // <MOCALocationDelegate>
-
-+(CLLocation*)getLocation;
+@interface MOCAAds : NSObject
 
 /*
  * Returns a collection of segments the current user belongs to.
